@@ -6,15 +6,17 @@ TAG=<!-- response
 ANSWER=\([\t ]*.*\)
 
 SUBMISSION=submission.md
-NAME=$(shell awk '/## Name:/ {print $$3}' $(SUBMISSION) )
-ACCOUNT=$(shell awk '/## GitHub Account:/ {print $$4}' $(SUBMISSION) )
+
+## On the Mac the # in the next two turn out to be comments
+NAME=$(shell awk '/Name:/ {print $$3}' $(SUBMISSION) )
+ACCOUNT=$(shell awk '/GitHub Account:/ {print $$4}' $(SUBMISSION) )
 COMMITS=$(shell git log --oneline | wc -l)
-MIN_COMMITS=4
+MIN_COMMITS=22
 
 
 all: md_submission
 
-md_submission: validate_submission validate_name validate_account #number_commits
+md_submission: validate_submission validate_name validate_account number_commits
 	@echo ---------------------------------
 	@echo The following are your responses:
 	@echo 
@@ -30,5 +32,7 @@ validate_account:
 	@test -n "$(ACCOUNT)"
 
 number_commits:
-	(( $(COMMITS) >= $(MIN_COMMITS) )) || { echo "Not enough commits" && false ; }
+	if (( $(COMMITS) < $(MIN_COMMITS) )) ; then \
+	  { echo "Not enough commits" && false ; }  \
+	fi
 
