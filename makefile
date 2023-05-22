@@ -14,7 +14,7 @@ MIN_COMMITS=4
 
 all: md_submission
 
-md_submission: validate_submission validate_name validate_account number_commits
+md_submission: validate_submission validate_name validate_account #number_commits
 	@echo ---------------------------------
 	@echo The following are your responses:
 	@echo 
