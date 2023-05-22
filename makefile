@@ -13,7 +13,7 @@ all: validate_submission validate_name validate_account
 	  sed "s/^ *\(.* *\)$(RESPONSE_TAG).*/\1 /" 
 
 validate_submission:
-	@[[ -f $(SUBMISSION) ]]  || echo \"$(SUBMISSION)\" is missing
+	@test -f $(SUBMISSION)  || echo \"$(SUBMISSION)\" is missing
 
 validate_name:
 	@grep "## Name:"  $(SUBMISSION)
