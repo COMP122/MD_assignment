@@ -1,4 +1,4 @@
-name: Markdown (MD) Validate
+name: Markdown (MD) Validator
 
 on:
   push:

@@ -7,19 +7,20 @@ RESPONSE_TAG=<!-- response
 
 
 all: validate_submission validate_name validate_account
-	@echo -----------------------
-	@echo The following are your responses
+	@echo ---------------------------------
+	@echo The following are your responses:
+	@echo 
 	@egrep '(^#|$(RESPONSE_TAG))' $(SUBMISSION) |\
 	  sed "s/^ *\(.* *\)$(RESPONSE_TAG).*/\1 /" 
 
 validate_submission:
-	@test -f $(SUBMISSION)  || echo \"$(SUBMISSION)\" is missing
+	@test -f $(SUBMISSION)  || echo \"$(SUBMISSION)\" is missing || return 1
 
 validate_name:
-	@grep "## Name:"  $(SUBMISSION)
+	@test -n $$(awk '/## Name:/ {print $$3}'  $(SUBMISSION) )
 
 validate_account:
-	@grep "## GitHub Account:" $(SUBMISSION)
+	@test -n $$(awk '/## GitHub Account:/ {print $$4}' $(SUBMISSION) )
 
 
 
