@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  validate_submission:
 
     runs-on: ubuntu-latest
 
