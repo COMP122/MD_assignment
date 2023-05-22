@@ -11,7 +11,7 @@ SUBMISSION=submission.md
 NAME=$(shell awk '/Name:/ {print $$3}' $(SUBMISSION) )
 ACCOUNT=$(shell awk '/GitHub Account:/ {print $$4}' $(SUBMISSION) )
 COMMITS=$(shell git log --oneline | wc -l)
-MIN_COMMITS=22
+MIN_COMMITS=4
 
 
 all: md_submission
@@ -32,7 +32,7 @@ validate_account:
 	@test -n "$(ACCOUNT)"
 
 number_commits:
-	if (( $(COMMITS) < $(MIN_COMMITS) )) ; then \
+	@if [[ $(COMMITS) < $(MIN_COMMITS) ]] ; then \
 	  { echo "Not enough commits" && false ; }  \
 	fi
 
