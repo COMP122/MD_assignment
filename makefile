@@ -33,7 +33,7 @@ validate_account:
 	@test -n "$(ACCOUNT)"
 
 number_commits:
-	git log --oneline | wc -l
+	git log --oneline 
 	test ! $(COMMITS) -lt $(MIN_COMMITS) || \
 	  { echo "Not enough commits" && false ; } 
 
