@@ -1,7 +1,7 @@
 # Sample Assignment:
 ### Due Date: 
 ---
-## Name: Jane Doe                                                        <!-- response -->
+## Name:                                                         <!-- response -->
 ## GitHub Account:  jd_doe                                               <!-- response -->
 
 ### Section One
