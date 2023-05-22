@@ -1,8 +1,8 @@
 # Sample Assignment:
 ### Due Date: 
 ---
-## Name:                                                         <!-- response -->
-## GitHub Account:  jd_doe                                               <!-- response -->
+## Name:  John                                                       
+## GitHub Account:  test
 
 ### Section One
 1. What is today's date:
@@ -15,13 +15,13 @@
 ### Section Two
 1. In the following code block, provide the commands used to create the assignment.md file
    ```
-   vi submission.md                                                     <!-- response -->
-                                                                        <!-- response -->
+   vi submission.md                                                   
+                                                                      
    ```
-   <!-- Add or remove additional response lines as needed. -->
+   <!-- No need to have response tags within a code block -->
 
 
-### Section Four
+### Section Three
 
 1. Enumerate and briefly describe the steps performed to execution an instruction:
   1. Start: Read the next instruction from memory.                                     <!-- response -->
