@@ -33,6 +33,6 @@ validate_account:
 	@test -n "$(ACCOUNT)"
 
 number_commits:
-	@test ! $(COMMITS) -lt $(MIN_COMMITS) || \
+	test ! $(COMMITS) -lt $(MIN_COMMITS) || \
 	  { echo "Not enough commits" && false ; } 
 
