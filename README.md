@@ -7,7 +7,7 @@ These are the general directions to all assignments that require the student to 
 
 ## To Get Started
   1. Accept this assignment via the link provided by the Professor
-  2. Clone this repository to your computer.  
+  2. Clone this repository to your computer within the deliverables subdirectory. 
   3. Review the "assignment.md" file.
   4. Make a copy of this file, naming it "submission.md": `cp assignment.md submission.md`
   5. Edit this file 
@@ -21,10 +21,10 @@ These are the general directions to all assignments that require the student to 
   1. Incrementally edit and submit your "submission.md" file
      - `git add`, `git commit`, and `git push`
      - This incremental approach is part of the software development process.
-  2. Provide an response to all items that are marked with a response tag (`<!-- response -->`)
+  2. Provide a response to all items that are marked with a response tag (`<!-- response -->`)
      - These response tags are just HTML comments that will not render in the final document.
-     - Your response should be placed to the left of the HTML comment.
-     - You may add additional response tags, and you MUST remove response tags you don't need.
+     - Your response *must* be placed to the left of the HTML comment.
+     - You may add additional response tags, and you *must* remove the response tags you don't need.
   3. Use additional spacing to ensure your answer is _easy_ to read to maximize credit.
   4. Add additional information as you feel is necessary to maximize credit.
 
@@ -33,8 +33,9 @@ These are the general directions to all assignments that require the student to 
   1. Review your file using a Markdown Editor: (open/start submission.md)
   2. Review your file using the Sublime Editor:  (subl submission.md)
   3. The contents of your file must be presented professionally.
-  4. Make any formating updates 
-  5. Perform a final `git push` to make your final submission.
+  4. Make any formating updates to your submission.md file
+  5. Run the make command to validate things are working correctly:  `make`
+  6. Perform a final `git push` to make your final submission.
      - You can view your submission.md file online to review your final formatted submission 
 
 ## Grading
