@@ -23,7 +23,8 @@ md_submission: validate_submission validate_name validate_account number_commits
 	@sed -n -e '/^#/p' -e '/```/,/```/p' -e "/$(TAG)/s/^$(ANSWER)[\t ]*$(TAG).*/\1/p" $(SUBMISSION)
 
 validate_submission:
-	@test -f $(SUBMISSION)  || { echo \"$(SUBMISSION)\" is missing && false ; }
+	@test -f $(SUBMISSION) || \
+	  { echo \"$(SUBMISSION)\" is missing && false ; }
 
 validate_name:
 	@test -n "$(NAME)"
@@ -32,7 +33,6 @@ validate_account:
 	@test -n "$(ACCOUNT)"
 
 number_commits:
-	@if [[ $(COMMITS) < $(MIN_COMMITS) ]] ; then \
-	  { echo "Not enough commits" && false ; }  \
-	fi
+	@test ! $(COMMITS) -lt $(MIN_COMMITS) || \
+	  { echo "Not enough commits" && false ; } 
 
