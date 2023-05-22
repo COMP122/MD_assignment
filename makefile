@@ -6,8 +6,8 @@ TAG=<!-- response
 ANSWER=\([\t ]*.*\)
 
 SUBMISSION=submission.md
-NAME=$(shell awk '/\#\# Name:/ {print $$3}' $(SUBMISSION) )
-ACCOUNT=$(shell awk '/\#\# GitHub Account:/ {print $$4}' $(SUBMISSION) )
+NAME=$(shell awk '/## Name:/ {print $$3}' $(SUBMISSION) )
+ACCOUNT=$(shell awk '/## GitHub Account:/ {print $$4}' $(SUBMISSION) )
 COMMITS=$(shell git log --oneline | wc -l)
 MIN_COMMITS=4
 
