@@ -16,7 +16,7 @@ MIN_COMMITS=4
 
 all: md_submission
 
-md_submission: validate_submission validate_name validate_account number_commits
+md_submission: validate_submission validate_name validate_account # number_commits
 	@echo ---------------------------------
 	@echo The following are your responses:
 	@echo 
@@ -32,8 +32,11 @@ validate_name:
 validate_account:
 	@test -n "$(ACCOUNT)"
 
+
+# Currently, the number of commits does not work on the server side
+# the log file only shows the most recent entry -- 
+# not sure why or what the work around is.
 number_commits:
-	git log
 	test ! $(COMMITS) -lt $(MIN_COMMITS) || \
 	  { echo "Not enough commits" && false ; } 
 
