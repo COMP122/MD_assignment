@@ -1,5 +1,4 @@
 # Assignment Name: 
-# Due Date:
 ---
 
 ## General Assignment Directions

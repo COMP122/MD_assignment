@@ -1,8 +1,14 @@
 # Sample Assignment:
-### Due Date: 
+### Name:                                                                 <!-- response -->
+### GitHub Account:                                                       <!-- response -->
 ---
-## Name:                                                                 <!-- response -->
-## GitHub Account:                                                       <!-- response -->
+
+This is the starter file for all document submissions.  All documents are to be presented using the markdown (MD) format.
+
+For more information of the markdown (MD) format see:  
+  1. [The Markdown Guide](https://www.markdownguide.org)
+  1. [A Cheatsheet](file://$HOME/classes/comp122/reference/markdown-cheat-sheet.md) 
+
 
 ### Section One
 1. What is today's date:
@@ -15,13 +21,10 @@
 ### Section Two
 1. In the following code block, provide the commands used to create the assignment.md file
    ```
-                                                                         <!-- response -->
-                                                                         <!-- response -->
-                                                                         <!-- response -->
-                                                                         <!-- response -->
-                                                                         <!-- response -->
+ 
+
    ```
-   <!-- Add or remove additional response lines as needed. -->
+   <!-- There is no need to have respone tags within a code block. -->
 
 
 ### Section Four

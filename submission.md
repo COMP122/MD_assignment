@@ -1,8 +1,14 @@
 # Sample Assignment:
-### Due Date: 
+### Name:  John                                                       
+### GitHub Account:  test
 ---
-## Name:  John                                                       
-## GitHub Account:  test
+
+This is the starter file for all document submissions.  All documents are to be presented using the markdown (MD) format.
+
+For more information of the markdown (MD) format see:  
+  1. [The Markdown Guide](https://www.markdownguide.org)
+  1. [A Cheatsheet](file://$HOME/classes/comp122/reference/markdown-cheat-sheet.md) 
+
 
 ### Section One
 1. What is today's date:
