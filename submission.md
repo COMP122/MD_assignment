@@ -1,5 +1,5 @@
 # Sample Assignment:
-### Name:  John                                                       
+### Name:                                                         
 ### GitHub Account:  test
 ---
 
