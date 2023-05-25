@@ -14,7 +14,9 @@ These are the general directions to all assignments that require the student to 
      * to include your github account in the appropriate location
   6. Add this file to your local repository: `git add submission.md`
   7. Commit this file to your local repository: `git commit -m 'creating file'`
-  8. Push the current contents of your local repository to remote repository: `git push`
+  8. Run the make command to test if you work so far: `make`
+  9. Push the current contents of your local repository to remote repository: `git push`
+  10. Validate that you have succefully submitted your first version: `repo-state`
 
 ## Work on the Assignment
   1. Incrementally edit and submit your "submission.md" file
@@ -33,9 +35,9 @@ These are the general directions to all assignments that require the student to 
   2. Review your file using the Sublime Editor:  (subl submission.md)
   3. The contents of your file must be presented professionally.
   4. Make any formating updates to your submission.md file
-  5. Run the make command to validate things are working correctly:  `make`
-  6. Perform a final `git push` to make your final submission.
-     - You can view your submission.md file online to review your final formatted submission 
+  5. Run the make command to validate things are working correctly: `make`
+  7. Perform a final `git push` to make your final submission.
+  8. Prepare a pull request to summarize your work and to validate you have succussfull submitte your work: `git-pull-request`
 
 ## Grading
    1. A semi-automated process will be used to expedite the grading of this assignment. 
